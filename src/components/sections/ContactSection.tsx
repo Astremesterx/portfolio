@@ -5,7 +5,7 @@ import { Mail, Phone, Globe, Code, Send } from "lucide-react";
 
 export function ContactSection() {
   return (
-    <section className="relative w-full min-h-[100vh] flex flex-col items-center justify-center px-4 py-20 overflow-hidden">
+    <section id="contact" className="relative w-full min-h-[100vh] flex flex-col items-center justify-center px-4 py-20 overflow-hidden">
       {/* Grid Background */}
       <div className="absolute inset-0 pointer-events-none z-0" 
            style={{ 
@@ -28,46 +28,63 @@ export function ContactSection() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="glass-panel p-8 md:p-12 rounded-2xl w-full max-w-4xl relative z-10 border border-cyber-cyan/30 shadow-[0_0_50px_rgba(0,243,255,0.1)]"
+        className="glass-panel p-6 sm:p-8 md:p-12 rounded-2xl w-full max-w-4xl relative z-10 border border-cyber-cyan/30 shadow-[0_0_50px_rgba(0,243,255,0.1)]"
       >
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-mono font-bold text-white mb-4 uppercase tracking-widest text-glow">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-white mb-4 uppercase tracking-widest text-glow">
             Initiate_Contact
           </h2>
           <p className="text-gray-400 font-sans">Secure communication channel open.</p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-12">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12">
           {/* Contact Info */}
           <div className="flex-1 space-y-6">
             <h3 className="text-xl font-mono text-cyber-cyan mb-6">Connection Details</h3>
             
-            <a href="mailto:salif@example.com" className="flex items-center gap-4 text-gray-300 hover:text-white group transition-colors">
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=salifspace@gmail.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-4 text-gray-300 hover:text-white group transition-colors"
+            >
               <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-cyber-cyan group-hover:bg-cyber-cyan/10 transition-all">
                 <Mail size={20} className="group-hover:text-cyber-cyan" />
               </div>
-              <span className="font-mono">hello@example.com</span>
+              <div>
+                <div className="text-xs text-gray-400 font-mono">Email Address</div>
+                <span className="font-mono text-white text-sm sm:text-base">salifspace@gmail.com</span>
+              </div>
             </a>
             
-            <a href="tel:+1234567890" className="flex items-center gap-4 text-gray-300 hover:text-white group transition-colors">
+            <a href="tel:+918589900488" className="flex items-center gap-4 text-gray-300 hover:text-white group transition-colors">
               <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-cyber-purple group-hover:bg-cyber-purple/10 transition-all">
                 <Phone size={20} className="group-hover:text-cyber-purple" />
               </div>
-              <span className="font-mono">+1 (234) 567-890</span>
+              <div>
+                <div className="text-xs text-gray-400 font-mono">Direct Line</div>
+                <span className="font-mono text-white text-sm sm:text-base">+91 8589900488</span>
+              </div>
             </a>
             
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-white group transition-colors">
+            <a href="https://linkedin.com/in/salif-muneer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-white group transition-colors">
               <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-[#0077b5] group-hover:bg-[#0077b5]/10 transition-all">
                 <Globe size={20} className="group-hover:text-[#0077b5]" />
               </div>
-              <span className="font-mono">LinkedIn Profile</span>
+              <div>
+                <div className="text-xs text-gray-400 font-mono">Professional Network</div>
+                <span className="font-mono text-white text-sm sm:text-base">linkedin.com/in/salif-muneer</span>
+              </div>
             </a>
             
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-white group transition-colors">
-              <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-white group-hover:bg-white/10 transition-all">
-                <Code size={20} className="group-hover:text-white" />
+            <a href="https://github.com/Astremesterx" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-white group transition-colors">
+              <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-cyber-cyan group-hover:bg-cyber-cyan/10 transition-all">
+                <Code size={20} className="group-hover:text-cyber-cyan" />
               </div>
-              <span className="font-mono">GitHub Profile</span>
+              <div>
+                <div className="text-xs text-gray-400 font-mono">Source Code & Repos</div>
+                <span className="font-mono text-white text-sm sm:text-base">github.com/Astremesterx</span>
+              </div>
             </a>
           </div>
 

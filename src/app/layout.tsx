@@ -11,8 +11,8 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Salif Muneer C P - Cybersecurity & AI Engineer",
-  description: "Bridging AI and Cybersecurity to build secure intelligent systems",
+  title: "Salif Muneer C P | Cyber Security & SOC Analyst | OSCP",
+  description: "Cybersecurity professional & M.Sc. Computer Science graduate specializing in SOC operations, penetration testing, network traffic analysis, and intelligent anomaly detection.",
 };
 
 export default function RootLayout({
